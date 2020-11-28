@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Quiz</title>
+</head>
+<body class="container">
+    <nav class="navbar navbar-inverse center" >
+
+      </nav>
+    <!-- this div sets Quiz up -->
+    <div id="quiz-setup" class="container">
+        
+       <div class=" row  col-md-8 " >
+           <h1 class="offset-8">SETUP</h1>
+            <div class=" form-group-lg col-md-9 offset-6 card card-body shadow-lg ">
+                <input id="name" type="text" class="form-control  form-group " placeholder="Name">
+                <input id="subject" type="text" class="form-control  form-group " placeholder="Subject">
+    
+                <input id="numbers" type="text" class="form-control  form-group" placeholder="No of Questions">
+
+                <input id="duration" type="text" class="form-control  form-group" placeholder="Duration" >
+                <input id="ansOpt" type="text" class="form-control  form-group" placeholder="Answer Option" >
+                <button class="btn btn-primary btn-lg btn-block" onclick="submitSetup()">Submit</button>
+                <button class="btn btn-success btn-lg btn-block" onclick="setQuestion()">set question</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Type the Question -->
+    <div class=" form-group-sm row col-8 col  offset-1 card card-body shadow-lg" id="question"style="display: none;">
+        <h2> Fill Up The Questions And Option</h2>
+        <div class="container row form-group-sm   card" id="question-container">
+            
+        </div>
+        <button class="btn-primary" onclick="takeQuiz()">Takequiz</button>
+        <button class="btn-success" onclick="doneSet()">Done</button>
+    </div>
+
+    <!-- Take Quiz -->
+    <div id="takequiz" style="display: none;">
+        <h1>Takequiz</h1>
+        <div  id="takequiz-container">
+        
+        </div>
+        
+        <button class=" btn-lg btn-primary" onclick="startQuiz()">SubmitAll</button>
+        <button class="btn-lg btn-success"  onclick="setQuiz()">setquiz</button>
+    </div>
+
+    <!-- <div class="quiz-wrapper" id="quizDisplay" style="display: none;">
+        <div id="questionBox" class="question">
+            Sample Question
+        </div>
+        <div class="options">
+            <ul id="ul">
+                <li id="opt1" onclick="button(this)"></li>
+                <li id="opt2" onclick="button(this)"></li>
+                <li id="opt3" onclick="button(this)"></li>
+                <li id="opt4" onclick="button(this)"></li>
+            </ul>
+        </div>
+        <div class="score">
+            <div class="next">
+                <button id="btnNext" type="button" onclick="next()">
+                    Next
+                </button>
+            </div>
+            <div class="score-card">
+                SCORE: <span id="scoreCard">0</span>
+            </div>
+        </div>
+        <button class="btn btn-success btn-lg btn-block"  onclick="setQuiz()">setquiz</button>
+    </div> -->
+
+
+
+    <footer>More about us</footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="./js/quiz.js"></script>
+    <!-- <script src="scripts.js"></script> -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
